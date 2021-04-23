@@ -66,7 +66,7 @@ body {
     display: flex;
     justify-content: center;
     place-items: center;
-    height: 100vh;
+    height: 80vh;
     font-size: 4rem;
     margin-bottom: 0.75rem;
     position: absolute;
@@ -163,7 +163,7 @@ h3 {
 }
 
 main {
-    min-height: 100vh;
+    min-height: 80vh;
     display: grid;
     place-items: center;
 }
@@ -311,12 +311,12 @@ header {
     height: 100%;
     left: 0px;
     top: 0px;
-    min-height: 100vh;
+    min-height: 80vh;
     background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(jonathan-borba-wil2YVMBIWo-unsplash.jpg) center/cover no-repeat;
 }
 
 .banner {
-    min-height: 100vh;
+    min-height: 80vh;
     display: inline;
     place-items: center;
     text-align: center;
@@ -385,7 +385,7 @@ p {
 
 #save-date,
 #registry {
-    height: 100vh;
+    height: 80vh;
 }
 
 #save-date {

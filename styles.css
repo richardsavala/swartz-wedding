@@ -75,25 +75,29 @@ body {
 }
 
 p {
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: capitalize;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: var(--ff-secondary);
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--clr-white);
 }
 
 @media screen and (min-width: 800px) {
+    p {
+        font-size: 3rem;
+    }
     h1 {
         font-size: 4rem;
     }
@@ -104,16 +108,12 @@ h3 {
     h3 {
         font-size: 2rem;
     }
-    h4 {
-        font-size: 1rem;
-    }
     body {
         font-size: 1rem;
     }
     h1,
     h2,
-    h3,
-    h4 {
+    h3 {
         line-height: 1;
     }
 }
@@ -254,7 +254,7 @@ nav {
     display: block;
     transition: var(--transition);
     font-weight: bold;
-    padding: 0.75rem 0;
+    padding: 0.5rem 0;
 }
 
 .links a:hover {
@@ -360,12 +360,7 @@ p {
     text-align: center;
     text-transform: capitalize;
     color: var(--clr-white);
-    font-size: 3rem;
-}
-
-.title span {
-    color: var(--clr-grey-1);
-    font-size: 3.5rem;
+    font-size: 1.5rem;
 }
 
 .save-date {
@@ -377,7 +372,7 @@ p {
 }
 
 .save-date p {
-    font-size: 4.5rem;
+    font-size: 2rem;
 }
 
 .registry {
@@ -394,7 +389,7 @@ p {
 }
 
 #save-date {
-    background: var(--clr-primary);
+    background: var(--clr-grey-1);
 }
 
 #registry {
@@ -407,7 +402,7 @@ footer {
 }
 
 footer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--clr-white);
     text-align: center;
     text-transform: capitalize;

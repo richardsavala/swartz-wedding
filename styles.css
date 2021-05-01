@@ -59,7 +59,7 @@ html {
 }
 
 body {
-    background: lightgray;
+    background: var(--clr-grey-1);
 }
 
 .container {
@@ -125,7 +125,7 @@ h3 {
     text-transform: capitalize;
     background: transparent;
     color: var(--clr-white);
-    padding: 0.375rem 0.75rem;
+    padding: 0.375rem 0.75rem .5rem .5rem;
     letter-spacing: var(--spacing);
     display: inline-block;
     transition: var(--transition);
@@ -166,11 +166,16 @@ main {
     min-height: 80vh;
     display: grid;
     place-items: center;
+    margin-top: 30px;
 }
 
 .section {
     padding-bottom: 5rem;
     margin: 0;
+}
+
+#date-banner {
+    width: 100%;
 }
 
 
@@ -190,25 +195,18 @@ main {
 nav {
     padding: 1rem 1.5rem;
     background: transparent;
-}
-
-
-/* fixed nav */
-
-.fixed-nav {
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--clr-white);
-    box-shadow: var(--light-shadow);
 }
 
-.fixed-nav .links a {
+.nav .links a {
     color: var(--clr-grey-1);
 }
 
-.fixed-nav .links a:hover {
+.nav .links a:hover {
     color: var(--clr-secondary);
 }
 
@@ -246,7 +244,6 @@ nav {
 }
 
 .links a {
-    background: transparent;
     color: var(--clr-white);
     font-size: 1.1rem;
     text-transform: capitalize;
@@ -265,7 +262,7 @@ nav {
     nav {
         background: transparent;
     }
-    .nav-center {
+    #nav-center {
         width: 90vw;
         max-width: 1170px;
         margin: 0 auto;
@@ -315,7 +312,7 @@ header {
     background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(jonathan-borba-wil2YVMBIWo-unsplash.jpg) center/cover no-repeat;
 }
 
-.banner {
+#banner {
     min-height: 80vh;
     display: inline;
     place-items: center;
@@ -324,7 +321,7 @@ header {
 
 .container {
     display: inline;
-    top: 40%;
+    top: 20%;
 }
 
 .container,
@@ -350,6 +347,9 @@ p {
 @media screen and (min-width: 768px) {
     .container p {
         max-width: 40rem;
+    }
+    .container {
+        top: 40;
     }
 }
 
@@ -386,6 +386,7 @@ p {
 #save-date,
 #registry {
     height: 80vh;
+    padding: 4rem;
 }
 
 #save-date {
